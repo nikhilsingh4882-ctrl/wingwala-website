@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wingwala — House of Chicken</title>
+<style>
+:root{
+  --bg:#0d0d0d; --card:#171717; --orange:#ff6a00; --cream:#fff7ed;
+  --muted:#b7b7b7; --line:#292929;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,13,13,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:26px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--orange)}
+.navlinks{display:flex;gap:28px;color:#ddd;font-size:14px}.navlinks a:hover{color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;padding:13px 20px;font-weight:800;cursor:pointer}
+.btn-orange{background:var(--orange);color:#111}.btn-dark{background:#222;border:1px solid #3a3a3a;color:#fff}
+.hero{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:70px 0}
+.badge{display:inline-block;color:#ff9a55;background:#2b170b;border:1px solid #5c2c0e;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(52px,8vw,92px);line-height:.9;letter-spacing:-5px}
+h1 span{color:var(--orange)}
+.hero p{color:var(--muted);max-width:570px;font-size:18px;margin:24px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{height:450px;border-radius:28px;background:
+radial-gradient(circle at 30% 20%,#ff8a2b 0 2%,transparent 20%),
+linear-gradient(145deg,#ff7a00,#7c2500 55%,#1a0d07);
+display:flex;align-items:flex-end;padding:28px;box-shadow:0 25px 80px rgba(255,106,0,.18)}
+.food-placeholder{width:100%;padding:22px;border-radius:18px;background:rgba(0,0,0,.48);backdrop-filter:blur(8px)}
+.food-placeholder strong{font-size:28px}.food-placeholder p{font-size:14px;margin:5px 0 0;color:#ddd}
+section{padding:80px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.eyebrow{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h2{font-size:42px;letter-spacing:-2px}
+.section-head p{color:var(--muted);max-width:470px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.card-img{height:190px;background:linear-gradient(135deg,#292929,#ff6a00 160%);display:flex;align-items:center;justify-content:center;font-size:65px}
+.card-body{padding:20px}.card-body h3{font-size:20px}.card-body p{color:var(--muted);font-size:14px;margin:7px 0 15px}.price{font-weight:900;color:#ff9a55}
+.about{background:#121212}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}
+.feature{padding:18px;border:1px solid var(--line);border-radius:14px;background:#181818}
+.feature b{display:block;margin-bottom:4px}.feature span{font-size:13px;color:var(--muted)}
+.review{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:18px}
+.stars{color:#ffb000;letter-spacing:2px;font-size:20px}
+.review blockquote{font-size:21px;margin:15px 0;color:#eee}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px}.info h3{margin-bottom:8px}.info p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#999}
+.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.hero-card{height:330px}
+ .cards,.about-grid,.info-grid{grid-template-columns:1fr}
+ .features{grid-template-columns:1fr 1fr} h1{letter-spacing:-3px}
+}
+</style>
+</head>
+<body>
 
+<nav>
+  <div class="container navbar">
+    <a class="logo" href="#">Wing<span>wala</span></a>
+    <div class="navlinks">
+      <a href="#menu">Menu</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </div>
+    <a class="btn btn-orange" href="tel:08447812907">Call Now</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="badge">HOUSE OF CHICKEN · NETAJI SUBHASH PLACE</div>
+    <h1>Wings.<br><span>Flavor.</span><br>Happiness.</h1>
+    <p>Bold flavors, juicy wings, burgers and wraps. Discover Wingwala's unique house of chicken experience at Unity One Elegante Mall.</p>
+    <div class="actions">
+      <a class="btn btn-orange" href="#menu">Explore Menu</a>
+      <a class="btn btn-dark" href="tel:08447812907">📞 084478 12907</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="food-placeholder">
+      <strong>Wingwala</strong>
+      <p>Wide variety of flavorful wings · Juicy burgers · Tasty wraps</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">What to try</div><h2>Fan favorites</h2></div>
+      <p>From spicy Indian-inspired flavors to fresh twists, there's something for every wing lover.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="card-img">🍗</div><div class="card-body"><h3>Tadke Wale Wings</h3><p>A bold, flavorful Wingwala favorite.</p><div class="price">Must Try</div></div></article>
+      <article class="card"><div class="card-img">🔥</div><div class="card-body"><h3>Yuzu Zing</h3><p>A bright and zingy flavor for adventurous foodies.</p><div class="price">Must Try</div></div></article>
+      <article class="card"><div class="card-img">🍔</div><div class="card-body"><h3>Veg Crunch Burger</h3><p>Crunchy, satisfying and perfect with fries.</p><div class="price">Customer Favorite</div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="eyebrow">Why Wingwala</div><h2>Flavor that brings people back.</h2>
+      <p style="color:var(--muted);margin-top:18px">Rated 5.0 from 154 reviews, Wingwala is loved for its variety of flavors, generous portions, reasonable prices and friendly service.</p>
+      <div class="features">
+        <div class="feature"><b>⭐ 5.0 Rating</b><span>154 customer reviews</span></div>
+        <div class="feature"><b>🍗 Many Flavors</b><span>Unique wing varieties</span></div>
+        <div class="feature"><b>💰 ₹200–400</b><span>Approx. per person</span></div>
+        <div class="feature"><b>😊 Great Service</b><span>Helpful, passionate staff</span></div>
+      </div>
+    </div>
+    <div class="review" id="reviews">
+      <div class="stars">★★★★★</div>
+      <blockquote>“Unique concept and wide variety of flavors being served by passionate staff.”</blockquote>
+      <p style="color:var(--muted)">— Brij Saini · Local Guide</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Come hungry</div><h2>Visit Wingwala</h2></div>
+    </div>
+    <div class="info-grid">
+      <div class="info"><h3>📍 Location</h3><p>3rd Floor, Unity One Elegante Mall, No T-04, Food Court, Netaji Subhash Place, New Delhi, Delhi 110034</p></div>
+      <div class="info"><h3>🕚 Opening</h3><p>Open · Closes 11 PM</p></div>
+      <div class="info"><h3>💳 Price</h3><p>₹200–400 per person</p></div>
+      <div class="info"><h3>📞 Contact</h3><p><a style="color:#ff9a55" href="tel:08447812907">084478 12907</a></p></div>
+    </div>
+    <div style="margin-top:25px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-orange" href="tel:08447812907">Call Wingwala</a>
+      <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wingwala%20Unity%20One%20Elegante%20Mall%20Netaji%20Subhash%20Place">Get Directions</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div><strong>Wing<span style="color:#ff6a00">wala</span></strong> — Taste the wings, feel the happiness.</div>
+    <div>© 2026 Wingwala</div>
+  </div>
+</footer>
+</body>
+</html>
